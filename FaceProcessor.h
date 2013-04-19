@@ -1,6 +1,5 @@
 //
 //  FaceProcessor.h
-//  Moustache
 //
 //  Created by Dave Peck on 5/9/12.
 //  Copyright (c) 2012 Skull Ninja Inc. All rights reserved.

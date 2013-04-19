@@ -1,6 +1,5 @@
 //
 //  FaceProcessor.m
-//  Moustache
 //
 //  Created by Dave Peck on 5/9/12.
 //  Copyright (c) 2012 Skull Ninja Inc. All rights reserved.
@@ -145,10 +144,6 @@ int const kNumberOfFaceFeaturesTracked = 7;
     //cv::GaussianBlur(clone, mat, cv::Size(), 3);
     //cv::addWeighted(clone, 1.5, mat, -0.5, 0, mat);
     
-    // Rotate video frame by 90deg to portrait by combining a transpose and a flip
-    // Note that AVCaptureVideoDataOutput connection does NOT support hardware-accelerated
-    // rotation and mirroring via videoOrientation and setVideoMirrored properties so we
-    // need to do the rotation in software here.
     cv::transpose(mat, mat);
     CGFloat temp = rect.size.width;
     rect.size.width = rect.size.height;
